@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="SULA, TIMOTHY ADAM C.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagaytay - Dream Destination</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #daa9a4, #E0DFD5);
+            font-family: 'Arial', sans-serif;
+            color: #E0DFD5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            font-family: Georgia, serif;
+            text-align: center;
+            background-color: #3e1a19;
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-weight: bold;
+            color: #E0DFD5;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 3rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #3e1a19;
+            padding: 15px 0;
+            width: 100%;
+        }
+
+        .nav a {
+            font-size: 22px;
+            color: #E0DFD5;
+            text-decoration: none;
+            padding: 14px 28px;
+            border: 2px solid #E0DFD5;
+            border-radius: 12px;
+            transition: all 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            background-color: #daa9a4;
+            color: #3e1a19;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            max-width: 1200px;
+            padding: 40px 30px;
+            background-color: #3e1a19;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+        }
+
+        .content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h2 {
+            text-decoration: underline;
+            font-size: 2rem;
+            font-family: Georgia, serif;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .nav a {
+                font-size: 16px;
+                padding: 8px 12px;
+            }
+
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content, .images {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tagaytay - Dream Destination</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Photo Gallery</a>
+        <a href="beats.html">My Beats</a>
+        <a href="movies.html">My Film Movies</a>
+        <a href="tvshows.html">My Film TV Shows</a>
+        <a href="dreamplaces.html">Dream Places to Visit</a>
+        <a href="bucketlist.html">Bucket List</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>Why Tagaytay is Special to Me</h2>
+            <p>Tagaytay is a refreshing escape from the bustling city life. With its cool climate, breathtaking views of Taal Volcano, and delicious local delicacies, it is a perfect getaway for relaxation and adventure.</p>
+
+            <h2>How to Get There</h2>
+            <p>Tagaytay is easily accessible by car or bus from Metro Manila. The travel time is approximately 2-3 hours depending on traffic conditions.</p>
+
+            <h2>Other Places to Visit in Tagaytay</h2>
+            <ul>
+                <li>Taal Volcano – An iconic active volcano with stunning views.</li>
+                <li>Sky Ranch – An amusement park with thrilling rides and panoramic views.</li>
+                <li>Picnic Grove – A scenic spot for picnics and outdoor activities.</li>
+                <li>People's Park in the Sky – A historic park with a magnificent view of the city.</li>
+            </ul>
+        </div>
+
+        <div class="images">
+            <img src="pictures/dreamplaces/places/tagaytay.jpg" alt="Tagaytay">
+        </div>
+    </div>
+</body>
+
+</html>

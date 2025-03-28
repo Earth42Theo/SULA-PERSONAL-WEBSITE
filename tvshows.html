@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="SULA, TIMOTHY ADAM C.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Film TV Shows</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #daa9a4, #E0DFD5);
+            font-family: 'Arial', sans-serif;
+            color: #E0DFD5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        header {
+            font-family: Georgia, serif;
+            text-align: center;
+            background-color: #3e1a19;
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-weight: bold;
+            color: #E0DFD5;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 3rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #3e1a19;
+            padding: 15px 0;
+            width: 100%;
+        }
+
+        .nav a {
+            font-size: 22px;
+            color: #E0DFD5;
+            text-decoration: none;
+            padding: 14px 28px;
+            border: 2px solid #E0DFD5;
+            border-radius: 12px;
+            transition: all 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            background-color: #daa9a4;
+            color: #3e1a19;
+        }
+
+        .container {
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+            padding: 40px 30px;
+            background-color: #3e1a19;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        .genre-section {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #daa9a4;
+            padding-bottom: 40px;
+        }
+
+        .movie {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .movie img {
+            width: 150px;
+            border-radius: 12px;
+            margin-right: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .movie-details {
+            flex-grow: 1;
+        }
+
+        h2 {
+            text-decoration: underline;
+            font-size: 2rem;
+            font-family: Georgia, serif;
+        }
+
+        iframe {
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .nav a {
+                font-size: 16px;
+                padding: 8px 12px;
+            }
+
+            .movie {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .movie img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Film TV Shows</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Photo Gallery</a>
+        <a href="beats.html">My Beats</a>
+        <a href="movies.html">My Film Movies</a>
+        <a href="tvshows.html">My Film TV Shows</a>
+        <a href="dreamplaces.html">Dream Places to Visit</a>
+        <a href="bucketlist.html">Bucket List</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <div class="container">
+
+        <section class="genre-section">
+            <h2>K-Drama</h2>
+
+            <div class="movie">
+                <div class="movie-details">
+                    <p><strong>Title:</strong> Guardian: The Lonely and Great God (Goblin)</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S94ukM8C17A" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="movie">
+                <div class="movie-details">
+                    <p><strong>Title:</strong> When Life Gives You Tangerines</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ggI4fSsWe_0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="genre-section">
+            <h2>Anime</h2>
+
+            <div class="movie">
+                <div class="movie-details">
+                    <p><strong>Title:</strong> Solo Leveling</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I6JIwjWOhnQ" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

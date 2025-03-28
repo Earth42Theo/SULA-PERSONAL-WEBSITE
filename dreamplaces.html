@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="SULA, TIMOTHY ADAM C.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Places to Visit</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #daa9a4, #E0DFD5);
+            font-family: 'Arial', sans-serif;
+            color: #E0DFD5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        header {
+            font-family: Georgia, serif;
+            text-align: center;
+            background-color: #3e1a19;
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-weight: bold;
+            color: #E0DFD5;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 3rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #3e1a19;
+            padding: 15px 0;
+            width: 100%;
+        }
+
+        .nav a {
+            font-size: 22px;
+            color: #E0DFD5;
+            text-decoration: none;
+            padding: 14px 28px;
+            border: 2px solid #E0DFD5;
+            border-radius: 12px;
+            transition: all 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            background-color: #daa9a4;
+            color: #3e1a19;
+        }
+
+        .container {
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+            padding: 40px 30px;
+            background-color: #3e1a19;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        h2 {
+            text-decoration: underline;
+            font-size: 2rem;
+            font-family: Georgia, serif;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .nav a {
+                font-size: 16px;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dream Places to Visit</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Photo Gallery</a>
+        <a href="beats.html">My Beats</a>
+        <a href="movies.html">My Film Movies</a>
+        <a href="tvshows.html">My Film TV Shows</a>
+        <a href="dreamplaces.html">Dream Places to Visit</a>
+        <a href="bucketlist.html">Bucket List</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <div class="container">
+        <h2>Explore My Dream Destinations</h2>
+
+        <img src="pictures/dreamplaces/luzonmap.jpg" alt="Dream Destinations" usemap="#dreamplaces">
+
+        <map name="dreamplaces">
+            <area shape="rect" coords="425, 95, 602, 152" href="cagayan.html" alt="Cagayan">
+            <area shape="poly" coords="390, 195, 456, 239, 428, 312, 348, 308, 323, 242" href="sagada.html" alt="Sagada">
+            <area shape="rect" coords="262, 344, 437, 400" href="baguio.html" alt="Baguio">
+            <area shape="circle" coords="266, 546 ,72" href="alaminos.html" alt="Alaminos">
+            <area shape="rect" coords="300, 658, 477, 708" href="tagaytay.html" alt="Tagaytay">
+        </map>
+
+        <p>Click on the destinations to learn more about why they are special to me!</p>
+    </div>
+</body>
+
+</html>
