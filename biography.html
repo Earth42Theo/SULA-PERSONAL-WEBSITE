@@ -156,6 +156,25 @@
             color: #3e1a19;
             border-color: #daa9a4;
         }
+                .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3e1a19;
+            color: white;
+            font-size: 24px;
+            padding: 15px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: none; /* Hidden by default */
+            transition: background-color 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #daa9a4;
+        }
 
         @media (max-width: 768px) {
             header h1 {
@@ -238,6 +257,29 @@
     </div>
 
     <a href="index.html" class="home-btn">Home</a>
+    <button id="scrollToTopBtn" class="scroll-to-top">
+        ↑
+    </button>
+
+    <script>
+        // Get the button
+        const mybutton = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 100px from the top of the document, show the button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        };
+    </script>
 </body>
 
 </html>
